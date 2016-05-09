@@ -67,7 +67,7 @@ brew install vim --override-system-vi
 brew install homebrew/dupes/grep
 brew install homebrew/dupes/openssh
 brew install homebrew/dupes/screen
-brew install homebrew/php/php55 --with-gmp
+brew install homebrew/php/php56 --with-gmp
 
 # Install font tools.
 brew tap bramstein/webfonttools
@@ -139,7 +139,7 @@ heroku update
 brew install caskroom/cask/brew-cask
 
 # Core casks
-brew cask install --appdir="/Applications" alfred
+#brew cask install --appdir="/Applications" alfred
 brew cask install --appdir="~/Applications" iterm2
 brew cask install --appdir="~/Applications" java
 brew cask install --appdir="~/Applications" xquartz
@@ -161,6 +161,12 @@ brew cask install --appdir="/Applications" dropbox
 brew cask install --appdir="/Applications" evernote
 #brew cask install --appdir="/Applications" gimp
 #brew cask install --appdir="/Applications" inkscape
+brew cask install --appdir="/Applications" sketch
+brew cask install --appdir="/Applications" filezilla
+brew cask install --appdir="/Applications" sourcetree
+brew cask install --appdir="/Applications" caffeine
+brew cask install --appdir="/Applications" clipmenu
+brew cask install --appdir="/Applications" coronasdk
 
 #Remove comment to install LaTeX distribution MacTeX
 #brew cask install --appdir="/Applications" mactex
@@ -173,7 +179,9 @@ brew install docker
 brew install boot2docker
 
 # Install developer friendly quick look plugins; see https://github.com/sindresorhus/quick-look-plugins
-brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzipql qlimagesize webpquicklook suspicious-package
+brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzipql qlimagesize webpquicklook suspicious-package 
+
+
 
 # Remove outdated versions from the cellar.
 brew cleanup

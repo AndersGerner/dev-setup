@@ -27,5 +27,7 @@ npm install -g coffee-script
 npm install -g grunt-cli
 npm install -g jshint
 npm install -g less
+npm install -g composer
+npm install -g gulp-cli
 
 #gem install jekyll
