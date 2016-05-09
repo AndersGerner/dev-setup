@@ -72,7 +72,8 @@ echo "<Directory "/Users/`whoami`/Sites">
 sudo apachectl restart
 
 mkdir -p ~/Sites/home
-git clone https://cph-cloud:76abS5mZ@bitbucket.org/cph-cloud/home.dev.git ~/Sites/home
+git clone https://cph-cloud@bitbucket.org/cph-cloud/home.dev.git ~/Sites/home
 
 sed -i 's/username/`whoami`/g' ~/Sites/home/config.php
 sudo mkdir /private/etc/apache2/extra/vhosts
+sudo touch /private/etc/apache2/extra/vhosts/empty.conf
