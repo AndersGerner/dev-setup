@@ -40,7 +40,7 @@ echo "TODO: \n Load: libphp5.so \n outcomment <Directory /> \n Load mod_chost_al
 touch ~/Sites/httpd-vhosts.conf
 sudo ln -s ~/Sites/httpd-vhosts.conf /etc/apache2/other
 
-echo "<Directory "/Users/`whoami`/Sites">
+echo "<Directory \"/Users/`whoami`/Sites\">
     Options Indexes MultiViews FollowSymLinks
     AllowOverride All
     Order allow,deny
@@ -48,20 +48,20 @@ echo "<Directory "/Users/`whoami`/Sites">
   </Directory>
 
   <Virtualhost *:80>
-    VirtualDocumentRoot "/Users/`whoami`/Sites/home/"
+    VirtualDocumentRoot \"/Users/`whoami`/Sites/home/\"
     ServerName home.dev
     UseCanonicalName Off
   </Virtualhost>
 
   <Virtualhost *:80>
-    VirtualDocumentRoot "/Users/`whoami`/Sites/%1/"
+    VirtualDocumentRoot \"/Users/`whoami`/Sites/%1/\"
     ServerName sites.dev
     ServerAlias *.dev
     UseCanonicalName Off
   </Virtualhost>
 
   <Virtualhost *:80>
-    VirtualDocumentRoot "/Users/`whoami`/Sites/%-7+/"
+    VirtualDocumentRoot \"/Users/`whoami`/Sites/%-7+/\"
     ServerName xip
     ServerAlias *.xip.io
     UseCanonicalName Off
